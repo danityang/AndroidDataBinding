@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_height"
+        android:layout_marginTop="@dimen/common_margin_15"
+        android:background="@color/material_white"
+        android:padding="@dimen/common_padding">
+
+
+        <TextView
+            android:id="@+id/text_samp_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/text_account"
+            android:textSize="@dimen/textsize_larger" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/login_item_height"
+            android:layout_marginLeft="@dimen/common_margin_15"
+            android:layout_toRightOf="@id/text_samp_account"
+            android:background="@color/material_white"
+            android:gravity="center_vertical"
+            android:hint="@string/text_hint_account"
+            android:inputType="text"
+            android:textSize="@dimen/textsize_larger" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_height"
+        android:background="@color/material_white"
+        android:padding="@dimen/common_padding">
+
+
+        <TextView
+            android:id="@+id/text_samp_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/text_password"
+            android:textSize="@dimen/textsize_larger" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/login_item_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_15"
+            android:layout_toRightOf="@id/text_samp_password"
+            android:background="@color/material_white"
+            android:gravity="center_vertical"
+            android:hint="@string/text_hint_password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/textsize_larger" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/pw_show" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_height"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin_15"
+        android:background="@drawable/login_button_selector"
+        android:gravity="center"
+        android:text="@string/text_login"
+        android:textColor="@drawable/loginbtn_color_seletor"
+        android:textSize="@dimen/textsize_largest" />
+
+</LinearLayout>
